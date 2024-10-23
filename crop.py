@@ -21,6 +21,10 @@ with open(scaler_path, 'rb') as scaler_file:
 with open(label_encoder_path, 'rb') as le_file:
     label_encoder = pickle.load(le_file)
 
+@app.get("/")
+async def ping():
+    return "Hello, I am alive"
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json['features']
@@ -31,4 +35,5 @@ def predict():
     return jsonify({'prediction': prediction[0]})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
+
