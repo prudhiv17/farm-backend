@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "main1.py",
+        "src": "crop.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "main1.py"
+        "dest": "crop.py"
       }
     ]
   }

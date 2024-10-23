@@ -7,9 +7,9 @@ app = Flask(__name__)
 CORS(app)
 
 
-model_path = r'C:\Users\Admin\Documents\Deploy_Git\models\crop_recommendation\random_forest_model.pkl'
-scaler_path = r'C:\Users\Admin\Documents\Deploy_Git\models\crop_recommendation\scaler.pkl'
-label_encoder_path = r'C:\Users\Admin\Documents\Deploy_Git\models\crop_recommendation\label_encoder.pkl'
+model_path = r'models\crop_recommendation\random_forest_model.pkl'
+scaler_path = r'models\crop_recommendation\scaler.pkl'
+label_encoder_path = r'models\crop_recommendation\label_encoder.pkl'
 
 
 with open(model_path, 'rb') as model_file:
