@@ -19,9 +19,9 @@ app.add_middleware(
 )
 
 # Load models
-POTATO_MODEL = tf.keras.models.load_model("C:/Users/Admin/Documents/Deploy_Git/models/cnn/1.h5")
-CORN_MODEL = tf.keras.models.load_model("C:/Users/Admin/Documents/Deploy_Git/models/cnn/corn.keras")
-APPLE_MODEL = tf.keras.models.load_model("C:/Users/Admin/Documents/Deploy_Git/models/cnn/apple.keras")
+POTATO_MODEL = tf.keras.models.load_model("models/cnn/1.h5")
+CORN_MODEL = tf.keras.models.load_model("models/cnn/corn.keras")
+APPLE_MODEL = tf.keras.models.load_model("models/cnn/apple.keras")
 
 
 # Class names and remedies for potato
